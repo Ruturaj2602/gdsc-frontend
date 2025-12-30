@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -14,6 +13,8 @@ import { RegisterComponent } from './core/register/register.component';
 import { AuthInterceptor } from './core/interceptors/auth.interceptor';
 import { AuthService } from './core/services/auth.service';
 import { ThemeService } from './core/services/theme.service';
+import { AuthInterceptor } from './core/interceptors/auth.interceptor';
+import { SharedModule } from './shared/shared.module'; 
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { ThemeService } from './core/services/theme.service';
   ],
   imports: [
     BrowserModule,
+    FormsModule,           
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
@@ -42,4 +44,4 @@ import { ThemeService } from './core/services/theme.service';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
