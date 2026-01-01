@@ -1,13 +1,10 @@
 <app-dashboard-sidebar> </app-dashboard-sidebar>
-<div class="content">
-  <app-dashboard-header></app-dashboard-header>
+ <div class="content">
+    <app-dashboards-header></app-dashboards-header>
  <div class="inner-page">
-  <app-dashboard-cards></app-dashboard-cards>
 
- <div class="two-col">
-      <app-month-progress></app-month-progress>
-      <app-user-distribution></app-user-distribution>
-    </div>
+
+  <app-dashboard-cards></app-dashboard-cards>
 
   <div class="panels">
     <div class="card"><h3>Recent Activity</h3>
@@ -17,7 +14,10 @@
       <app-notification-list [notifications]="notifications"></app-notification-list>
     </div>
  <div>
-  
+  <div class="two-col">
+      <app-month-progress></app-month-progress>
+      <app-user-distribution></app-user-distribution>
+    </div>
 
 </div>
   </div>

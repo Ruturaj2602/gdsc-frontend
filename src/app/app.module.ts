@@ -13,8 +13,9 @@ import { RegisterComponent } from './core/register/register.component';
 import { AuthInterceptor } from './core/interceptors/auth.interceptor';
 import { AuthService } from './core/services/auth.service';
 import { ThemeService } from './core/services/theme.service';
-import { AuthInterceptor } from './core/interceptors/auth.interceptor';
+//  import { AuthInterceptor } from './core/interceptors/auth.interceptor';
 import { SharedModule } from './shared/shared.module'; 
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
@@ -34,7 +35,7 @@ import { SharedModule } from './shared/shared.module';
     ReactiveFormsModule,
     AppRoutingModule,
     RouterModule,
-   
+   SharedModule
     
   ],
   providers: [
